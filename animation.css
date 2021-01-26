@@ -1,0 +1,68 @@
+/*-----------------------------------------------------------------
+On load animasjon for hele siden hver gang siden blir refreshed.
+------------------------------------------------------------------*/
+body { 
+    animation: fadeInAnimation ease-in-out 3s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: backwards; 
+}
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+}
+/*----------------------------------
+Animasjon for logo  
+----------------------------------*/
+.logo{
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+@keyframes logo {
+
+    0%{
+        font-weight: 100;
+    }
+    20%{
+        font-weight: 200;
+    }
+    30%{
+        font-weight: 300;
+    }
+    40%{
+        font-weight: 400;
+    }
+    50%{
+        font-weight: 500;
+    }
+    60%{
+        font-weight: 600;
+    }
+    70%{
+        font-weight: 700;
+    }
+    80%{
+        font-weight: 800;
+    }
+    100%{
+        font-weight: 900;
+    }
+}
+/*--------------------------------------------------
+Setter animasjonen på pause når siden blir  mindre
+--------------------------------------------------*/
+@media screen and (max-width: 877px){
+
+    .logo{
+
+        animation-play-state: paused;
+        
+    }
+}

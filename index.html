@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+    <title>Paragraph Paragraph</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./animation.css">
+    <link rel="stylesheet" href="./text_img.css">
+    <script src="./main.js" defer></script>
+    <script src="./text-edit.js" defer></script>
+</head>
+<body>
+    <nav class="menu-container">
+        <div class="menu-grid">
+            <div class="logo">Paragraph Paragraph </div>
+            <div class="fonts">Fonts</div>
+            <div class="about"> About</div>
+            <div class="menu" id="menuBtn"> <button id="meny">Menu</button> </div>
+        </div>
+    </nav>
+    <section>
+
+        <img class="typefaceName" src="./images/TypfaceName.png" alt="Paragraph">
+
+        <p class="ingress">While {most of} the fonts around here scream in desperate need of your peepers’ gaze,
+            Paragraph Sans aims to fade into the background [like the finest Japanese-made white noise machine as you
+            drift off to ~dreamland~].¶ Paragraph Sans also provides a once-in-a-lifetime opportunity to
+            use an Pargraph Paragraph font more than once! 7 weights, 3 optical sizes.</p>
+        <p id="tryFont">Try the font right here. Change the<br></br>weight, size, letter spacing and line height.Enjoy:-)</p>
+
+    </section>
+    
+    <section  class="text-edit">
+        <select tabindex="0" id="weightInput" class="signel-page-selector" onchange="updateWeight()">
+            <option value="200">Paragraph Sans Light</option>
+            <option value="300">Paragraph Sans Thin</option>
+            <option value="400">Paragraph Sans Regular</option>
+            <option value="500">Paragraph Sans Medium</option>
+            <option value="600">Paragraph Sans SemiBold</option>
+            <option value="700">Paragraph Sans Bold</option>
+            <option value="800">Paragraph Sans Black</option>
+        </select>
+
+        <div class="value_container">
+            <div id="size_font">Size</div>
+            <div id="letter_spacing">Letter spacing</div>
+            <div id="line_height">Line height</div>
+
+            <div id="size">80px</div>
+            <div id="spacing">0px</div>
+            <div id="height">90px</div>
+
+            <input tabindex="0" type="range" id="sizeInput" min="12" max="200" value="80" oninput="updateSize()">
+            <input tabindex="0" id="spacingInput" type="range" min="-8" max="8" value="0" oninput="updateSpacing()">
+            <input tabindex="0" id="heightInput" type="range" min="12" max="230" value="90" oninput="updateHeight()">
+        </div>
+        <textarea id="fontTester" style='font-family:"degular",sans-serif' type="text"
+            rows="3">Write something here if you want:-).</textarea>
+
+    </section>
+    <section>
+
+        <img class="variable" src="./images/variable-2.png" alt="">
+        <img class="wave" src="./images/wave-variable.png" alt="">
+        <img class="alphabet" src="./images/alphabet copy.png" alt="">
+        <img class="placeholdertext" src="./images/placeholdertext.png" alt="">
+        <img class="ggg" src="./images/ggg.png" alt="">
+        <img class="glyphs" src="./images/glyphs.png" alt="">
+        <img class="text" src="./images/Ligaturer.png" alt="">
+
+    </section>
+    
+    <footer>
+        <div class="site-footer">
+            <h1 class="footer-overskrift">Paragraph Paragraph © 2020</h1>
+            <div><button tabindex="0" class="scrollbtn" id="to-top" onclick="topFunction()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-circle" 
+                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" 
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="9" />
+                <line x1="12" y1="8" x2="8" y2="12"/>
+                <line x1="12" y1="8" x2="12" y2="16"/>
+                <line x1="16" y1="12" x2="12" y2="8" />
+                </svg>
+            </button></div>
+        </div>
+    </footer>
+
+</body>
+</html>
